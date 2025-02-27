@@ -6,11 +6,11 @@ use App\Http\Controllers\PenerbitController;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-
+Route::get('/', [BukuController::class, 'data'])->name('index');
 Route::get('/admin', [BukuController::class, 'index'])->name('admin');
 Route::get('/index', [BukuController::class, 'data'])->name('index');
 Route::post('/admin/store', [BukuController::class, 'store'])->name('buku.store');
