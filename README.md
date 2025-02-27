@@ -48,12 +48,16 @@ Then, open `http://127.0.0.1:8000` in your browser.
 ## Routes
 | Method | URL | Description |
 |--------|-----|-------------|
-| GET | `/admin` | Menampilkan halaman admin |
+| GET | `/admin` | Menampilkan data buku |
 | GET | `/index` | Menampilkan halaman index |
-| POST | `/admin/store` | Fitur create |
-| PUT | `/admin/update/{id}` | Fitur update |
-| DELETE | `/admin/delete/{id}` | Fitur delete |
-| GET | `/pengadaan` | menampilkan halaman pengadaan |
+| POST | `/admin/store` | Fitur create buku |
+| PUT | `/admin/update/{id}` | Fitur update buku |
+| DELETE | `/admin/delete/{id}` | Fitur delete buku |
+| GET | `/pengadaan` | Menampilkan halaman pengadaan |
+| GET | `/penerbit` | Menampilkan data penerbit |
+| POST | `/penerbit` | Fitur create penerbit |
+| PUT | `/penerbit/{id}` | Fitur update penerbit |
+| DELETE | `/penerbit/{id}` | Fitur delete penerbit |
 
 ## Screenshots
 ### 📌 Halaman Index
