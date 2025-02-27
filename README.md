@@ -1,4 +1,4 @@
-# UNIBOOKSTORE - Merupakan aplikasi berbasis web sederhana yang dibangun menggunakan framework Laravel dan Boostrap. Aplikasi web ini memeiliki beberapa fitur.
+# UNIBOOKSTORE - Merupakan aplikasi berbasis web sederhana yang dibangun menggunakan framework Laravel dan Bootstrap. Aplikasi web ini memeiliki beberapa fitur.
  
 ⚠️ DISCLAIMER
 Proyek ini digunakan sebagai syarat lulus Ujian Sertifikasi Profesi Junior Web Developer (JobHun, 2025)
