@@ -1,6 +1,7 @@
-# UNIBOOKSTORE - Proyek ini digunakan sebagai syarat lulus Ujian Sertifikasi Profesi Junior Web Developer (JobHun, 2025)
-
-UNIBOOKSTORE merupakan aplikasi berbasis web sederhana yang dibangun menggunakan framework Laravel dan Boostrap. Aplikasi web ini memeiliki beberapa fitur.
+# UNIBOOKSTORE - Merupakan aplikasi berbasis web sederhana yang dibangun menggunakan framework Laravel dan Boostrap. Aplikasi web ini memeiliki beberapa fitur.
+ 
+⚠️ DISCLAIMER
+Proyek ini digunakan sebagai syarat lulus Ujian Sertifikasi Profesi Junior Web Developer (JobHun, 2025)
 
 ## Fitur
 - **Manajemen Buku**: Create, read, update, dan delete data buku.
