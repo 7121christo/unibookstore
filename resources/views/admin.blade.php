@@ -120,7 +120,7 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Stok</label>
-                                                <input type="number" class="form-control" name="stok"
+                                                <input type="number" class="form-control" min="1" name="stok"
                                                     value="{{ $buku->stok }}" required>
                                             </div>
                                             <div class="mb-3">
@@ -174,7 +174,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Stok</label>
-                                <input type="number" class="form-control" name="stok" required>
+                                <input type="number" class="form-control" min="1" name="stok" required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Penerbit</label>
