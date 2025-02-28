@@ -16,13 +16,19 @@ class PenerbitController extends Controller
 
     public function store(Request $request){
         $request->validate([
+            'id_penerbit' => 'required|unique:penerbits,id_penerbit',
             'nama' => 'required|string|max:255',
             'alamat' => 'required|string|max:500',
+            'kota' => 'required|string|max:255',
+            'telepon' => 'required|string|max:255',
         ]);
 
         Penerbit::create([
-            'nama' => $request->nama,
-            'alamat' => $request->alamat,
+            'id_penerbit' => $request->input('id_penerbit'),
+            'nama' => $request->input('nama'),
+            'alamat' => $request->input('alamat'),
+            'kota' => $request->input('kota'),
+            'telepon' => $request->input('telepon'),
         ]);
 
         return redirect()->route('admin')->with('success', 'Penerbit berhasil diperbarui!');
@@ -31,14 +37,20 @@ class PenerbitController extends Controller
 
     public function update(Request $request, $id){
         $request->validate([
+            'id_penerbit' => 'required|string|max:255',
             'nama' => 'required|string|max:255',
             'alamat' => 'required|string|max:500',
+            'kota' => 'required|string|max:255',
+            'telepon' => 'required|string|max:255',
         ]);
 
         $penerbit = Penerbit::findOrFail($id);
         $penerbit->update([
-            'nama' => $request->nama,
-            'alamat' => $request->alamat,
+            'id_penerbit' => 'required|string|max:255',
+            'nama' => 'required|string|max:255',
+            'alamat' => 'required|string|max:500',
+            'kota' => 'required|string|max:255',
+            'telepon' => 'required|string|max:255',
         ]);
 
         return redirect()->route('admin')->with('success', 'Penerbit berhasil dihapus!');
