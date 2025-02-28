@@ -8,7 +8,7 @@ class Penerbit extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama', 'alamat', 'kota', 'telepon'];
+    protected $fillable = ['id_penerbit','nama', 'alamat', 'kota', 'telepon'];
 
     public function bukus()
     {
